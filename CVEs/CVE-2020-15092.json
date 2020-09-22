@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2020-15092",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/NUKnightLab/TimelineJS3.git",
+    "prePatch": {
+        "commit": "d3b01141fb00a64233d9fc089c917864c1cd4712",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "source/js/media/TL.Media.js",
+                    "line": 263
+                },
+                "explanation": "Stored cross-site scripting"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "cd4d0c60ca1eaad164bdf7935ffab2eb7a68459d"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116"
+    ]
+}

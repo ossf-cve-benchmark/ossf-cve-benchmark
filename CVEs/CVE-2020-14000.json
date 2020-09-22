@@ -1,0 +1,25 @@
+{
+    "CVE": "CVE-2020-14000",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/LLK/scratch-vm.git",
+    "prePatch": {
+        "commit": "b67ba75d8b1df4268a9d6727bbc4f32f153c9131",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/extension-support/extension-worker.js",
+                    "line": 20
+                },
+                "explanation": "Client-side URL redirect"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "90b9da45f4084958535338d1c4d71a22d6136aab"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116",
+        "CWE-601"
+    ]
+}

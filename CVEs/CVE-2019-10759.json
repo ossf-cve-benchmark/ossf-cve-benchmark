@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2019-10759",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/commenthol/safer-eval.git",
+    "prePatch": {
+        "commit": "1ff9411b4099e71798cfd822d5b0a536b39f31d5",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/browser.js",
+                    "line": 49
+                },
+                "explanation": "sandbox escape / arbitrary code execution"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "25fbbe53e46c54d10b4c583b8f5c659933400ccb"
+    },
+    "CWEs": [
+        "CWE-94"
+    ]
+}

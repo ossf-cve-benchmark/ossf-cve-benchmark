@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-18077",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/juliangruber/brace-expansion.git",
+    "prePatch": {
+        "commit": "265f6cd6586383eebebbfc3c45da2eaa153d9e63",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 109
+                },
+                "explanation": "Inefficient regular expression"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "ed46e5ba619bd938e5b84835fca00eed0adc5585"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

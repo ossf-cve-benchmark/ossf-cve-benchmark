@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16098",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/node-modules/charset.git",
+    "prePatch": {
+        "commit": "5ba8a4942f069d40584cf5a1a7938ff8dc92bcc9",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 44
+                },
+                "explanation": "Polynomial regular expression used on uncontrolled data"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "effda0c48c51b47a47f4cad7db0c51ee7407cc1b"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

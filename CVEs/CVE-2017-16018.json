@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16018",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/restify/node-restify.git",
+    "prePatch": {
+        "commit": "893895137b6a54a21ebf88cabe3f275636ef28d7",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/server.js",
+                    "line": 202
+                },
+                "explanation": "Reflected cross-site scripting"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "24c57cef13dced488ca698db72b851cecd687924"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116"
+    ]
+}

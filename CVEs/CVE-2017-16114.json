@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16114",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/markedjs/marked.git",
+    "prePatch": {
+        "commit": "49b7eaca76d14ccd91f87decc11bbe213a6e0af4",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/marked.js",
+                    "line": 459
+                },
+                "explanation": "Inefficient regular expression"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "a37bd643f05bf95ff18cafa2b06e7d741d2e2157"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2017-16107",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/Eeems/PooledWebSocket.git",
+    "prePatch": {
+        "commit": "d51217a285c1dc5851743d0756cc43c35d12737c",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "server.js",
+                    "line": 9
+                },
+                "explanation": "Uncontrolled data used in path expression"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "7b3b4e5c6be6d8a964296fa3c50e38dc07e9701d"
+    },
+    "CWEs": [
+        "CWE-022",
+        "CWE-023",
+        "CWE-036",
+        "CWE-073",
+        "CWE-099"
+    ]
+}

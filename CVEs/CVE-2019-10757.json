@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2019-10757",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/knex/knex.git",
+    "prePatch": {
+        "commit": "516b0747901c1d3efb4097bb89f2f7bce7e7ba36",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/dialects/mssql/index.js",
+                    "line": 210
+                },
+                "explanation": "Replacement of a substring with itself"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "988fb243898d746a759d422762685a79eddf99ca"
+    },
+    "CWEs": [
+        "CWE-116"
+    ]
+}

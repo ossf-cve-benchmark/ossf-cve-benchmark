@@ -1,0 +1,25 @@
+{
+    "CVE": "CVE-2018-18282",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/zeit/next.js.git",
+    "prePatch": {
+        "commit": "ae56c7847f32173c0c6954a124fdaa749d44b5dc",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "server/document.js",
+                    "line": 190
+                },
+                "explanation": "Improper code sanitization"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "e6d79bb88ee47b9f56a84371f65a9eaac75c6fa4"
+    },
+    "CWEs": [
+        "CWE-094",
+        "CWE-079",
+        "CWE-116"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16117",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/Trott/node-slug.git",
+    "prePatch": {
+        "commit": "85ded30a95760b19cd223abe668eade0279a21f2",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "slug.js",
+                    "line": 64
+                },
+                "explanation": "Polynomial regular expression used on uncontrolled data"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "791b7d8ea1804be341561aa5d44d282bbfd2f780"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

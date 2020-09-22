@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2017-16031",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/socketio/socket.io.git",
+    "prePatch": {
+        "commit": "fe6dd874437ccd13e4753c03d7a98e5382d0b0d5",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/manager.js",
+                    "line": 755
+                },
+                "explanation": "Insecure randomness"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "67b4eb9abdf111dfa9be4176d1709374a2b4ded8"
+    },
+    "CWEs": [
+        "CWE-338"
+    ]
+}

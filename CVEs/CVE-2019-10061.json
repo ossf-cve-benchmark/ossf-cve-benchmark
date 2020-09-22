@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2019-10061",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/peterbraden/node-opencv.git",
+    "prePatch": {
+        "commit": "cfc96ba0af8c13d017d9c72f2c61ec968f1c15fb",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "utils/find-opencv.js",
+                    "line": 15
+                },
+                "explanation": "Indirect uncontrolled command line"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "81a4b8620188e89f7e4fc985f3c89b58d4bcc86b"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-088"
+    ]
+}

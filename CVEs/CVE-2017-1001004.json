@@ -1,0 +1,25 @@
+{
+    "CVE": "CVE-2017-1001004",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/josdejong/typed-function.git",
+    "prePatch": {
+        "commit": "9a8cac3cb8ae89fd0a9b3ae2dfde27cd1aa5a60a",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "typed-function.js",
+                    "line": 1118
+                },
+                "explanation": "Code injection"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "6478ef4f2c3f3c2d9f2c820e2db4b4ba3425e6fe"
+    },
+    "CWEs": [
+        "CWE-094",
+        "CWE-079",
+        "CWE-116"
+    ]
+}

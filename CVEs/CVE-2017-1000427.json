@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2017-1000427",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/markedjs/marked.git",
+    "prePatch": {
+        "commit": "38f1727ffee0820975677027b8968bc1954e6637",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/marked.js",
+                    "line": 878
+                },
+                "explanation": "Incomplete URL scheme check"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "cd2f6f5b7091154c5526e79b5f3bfb4d15995a51"
+    },
+    "CWEs": [
+        "CWE-020"
+    ]
+}

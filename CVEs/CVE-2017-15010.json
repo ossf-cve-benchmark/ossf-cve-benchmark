@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-15010",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/salesforce/tough-cookie.git",
+    "prePatch": {
+        "commit": "fcc8abfa3d3cab4f99da38f3f3749b1b186eb5a4",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/cookie.js",
+                    "line": 61
+                },
+                "explanation": "Polynomial regular expression used on uncontrolled data"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "f1ed420a6a92ea7a5418df6e39e676556bc0c71d"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

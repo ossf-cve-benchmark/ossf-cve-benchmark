@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2018-16460",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/UmbraEngineering/ps.git",
+    "prePatch": {
+        "commit": "facfbce24c0dc5505edbae759f4bb991f2724979",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/index.js",
+                    "line": 8
+                },
+                "explanation": "Unsafe shell command constructed from library input"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "47e6f3815c45ac491f0e9f08d3eeeed5217e97c4"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-088"
+    ]
+}

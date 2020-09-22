@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2019-1010266",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/lodash/lodash.git",
+    "prePatch": {
+        "commit": "90e6199a161b6445b01454517b40ef65ebecd2ad",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lodash.js",
+                    "line": 279
+                },
+                "explanation": "Polynomial regular expression used on uncontrolled data"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "5c08f18d365b64063bfbfa686cbb97cdd6267347"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

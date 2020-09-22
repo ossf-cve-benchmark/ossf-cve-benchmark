@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2019-10746",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/jonschlinkert/mixin-deep.git",
+    "prePatch": {
+        "commit": "9925af763440a50891358d00db0e6a5accc50ee6",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 21
+                },
+                "explanation": "Prototype-polluting function"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "8f464c8ce9761a8c9c2b3457eaeee9d404fa7af9"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-079",
+        "CWE-094",
+        "CWE-400",
+        "CWE-915"
+    ]
+}

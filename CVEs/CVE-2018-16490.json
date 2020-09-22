@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2018-16490",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/aheckmann/mpath.git",
+    "prePatch": {
+        "commit": "77204d7e5b0adb2100e862069a3c20d073df8f06",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/index.js",
+                    "line": 272
+                },
+                "explanation": "Prototype-polluting function"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "7e2977feb38cf3ce20c1e98b0850909e5f34e6c4"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-079",
+        "CWE-094",
+        "CWE-400",
+        "CWE-915"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2017-16014",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/http-party/node-http-proxy.git",
+    "prePatch": {
+        "commit": "0c71119ee58ee84068120be72308ecb28cb3e532",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/node-http-proxy.js",
+                    "line": 225
+                },
+                "explanation": "Server crash"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "0e36912906640fdb007e0492b75c3f6a7b580ec6"
+    },
+    "CWEs": [
+        "CWE-730"
+    ]
+}

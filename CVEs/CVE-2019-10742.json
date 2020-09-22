@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2019-10742",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/axios/axios.git",
+    "prePatch": {
+        "commit": "047501f7083665e0924f2680846fd8721e6de50d",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/adapters/http.js",
+                    "line": 214
+                },
+                "explanation": "Unclosed stream"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "0d4fca085b9b44e110f4c5a3dd7384c31abaf756"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-404"
+    ]
+}

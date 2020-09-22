@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16023",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/sindresorhus/decamelize.git",
+    "prePatch": {
+        "commit": "18479821851414d91ad3d42d8560adff5969da4b",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 8
+                },
+                "explanation": "Regular expression injection"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "76d47d8de360afb574da2e34db87430ce11094e0"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

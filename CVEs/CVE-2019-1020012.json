@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2019-1020012",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/parse-community/parse-server.git",
+    "prePatch": {
+        "commit": "54ba9a0f00eaeb7d8c0938dd555f913d58a5fdcd",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/Controllers/SchemaController.js",
+                    "line": 399
+                },
+                "explanation": "Denial of Service for any subsequent POST requests"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "8709daf698ea69b59268cb66f0f7cee75b52daa5"
+    },
+    "CWEs": [
+        "CWE-444"
+    ]
+}

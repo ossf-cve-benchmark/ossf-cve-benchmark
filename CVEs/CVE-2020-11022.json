@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2020-11022",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/jquery/jquery.git",
+    "prePatch": {
+        "commit": "04bf577e2f961c9dde85ddadc77f71bc7bc671cc",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/manipulation.js",
+                    "line": 239
+                },
+                "explanation": "Expansion of *sanitsed* self-closing HTML tags may introduce new mXSS vulnerabilities"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "1d61fd9407e6fbe82fe55cb0b938307aa0791f77"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116"
+    ]
+}

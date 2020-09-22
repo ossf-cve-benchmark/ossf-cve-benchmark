@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2018-11615",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/moscajs/mosca.git",
+    "prePatch": {
+        "commit": "e61f7491519ff69732e91f5afa107cda4c4d271e",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/persistence/mongo.js",
+                    "line": 270
+                },
+                "explanation": "Incomplete string escaping or encoding"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "21ad292f9ff3d49134afd31ae519755866556dd5"
+    },
+    "CWEs": [
+        "CWE-116",
+        "CWE-020"
+    ]
+}

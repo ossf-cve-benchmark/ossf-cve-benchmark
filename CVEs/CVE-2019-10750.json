@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2019-10750",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/alexindigo/deeply.git",
+    "prePatch": {
+        "commit": "d9f59eec37b75ce52038b3fcfb0fd86d4989c0c1",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/reduce_object.js",
+                    "line": 19
+                },
+                "explanation": "Prototype-polluting function"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "6eccb2f03ec8d3eefc6805053c4cc2a36aab1505"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-079",
+        "CWE-094",
+        "CWE-400",
+        "CWE-915"
+    ]
+}

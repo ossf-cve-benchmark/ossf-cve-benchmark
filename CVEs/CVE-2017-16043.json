@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16043",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/erming/shout.git",
+    "prePatch": {
+        "commit": "890c751bb624cde53dc392b2c851cdcd056033c6",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "client/js/shout.js",
+                    "line": 318
+                },
+                "explanation": "Client-side cross-site scripting"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "ef041d6612e20369bf49b17b8162c57b4955a1cc"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116"
+    ]
+}

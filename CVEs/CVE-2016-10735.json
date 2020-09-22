@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2016-10735",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/twbs/bootstrap.git",
+    "prePatch": {
+        "commit": "ba6a6f13691000ffaf22ef8e731513737659447f",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "js/src/util.js",
+                    "line": 120
+                },
+                "explanation": "DOM text reinterpreted as HTML"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "bcad4bcb5f5a9ef079b2883a48a698b35261e083"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116"
+    ]
+}

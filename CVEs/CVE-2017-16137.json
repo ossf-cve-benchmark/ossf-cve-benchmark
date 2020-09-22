@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16137",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/visionmedia/debug.git",
+    "prePatch": {
+        "commit": "47747f329fe159e94262318b52b87a48f6c0acd4",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/node.js",
+                    "line": 86
+                },
+                "explanation": "Polynomial regular expression used on uncontrolled data"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "c38a0166c266a679c8de012d4eaccec3f944e685"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

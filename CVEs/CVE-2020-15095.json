@@ -1,0 +1,25 @@
+{
+    "CVE": "CVE-2020-15095",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/npm/cli.git",
+    "prePatch": {
+        "commit": "479e45c03be7b452cbe346e96c750d36597c3eb6",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/fetch-package-metadata.js",
+                    "line": 22
+                },
+                "explanation": "Clear-text logging of sensitive information"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "a9857b8f6869451ff058789c4631fadfde5bbcbc"
+    },
+    "CWEs": [
+        "CWE-312",
+        "CWE-315",
+        "CWE-359"
+    ]
+}

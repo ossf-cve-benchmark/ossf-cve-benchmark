@@ -1,0 +1,25 @@
+{
+    "CVE": "CVE-2018-1000086",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/nprapps/pym.js.git",
+    "prePatch": {
+        "commit": "4b9016c30a930608e68dcd831176e1d089fab55b",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/pym.js",
+                    "line": 569
+                },
+                "explanation": "Client-side URL redirect"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "c3552a6cf2532664c17bd6a318fb3cf8e4cf2f97"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116",
+        "CWE-601"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16100",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/skoranga/node-dns-sync.git",
+    "prePatch": {
+        "commit": "b748fe77a87749d95876028eda8e759109be4c73",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/dns-sync.js",
+                    "line": 21
+                },
+                "explanation": "Unsafe shell command constructed from library input"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "d9abaae384b198db1095735ad9c1c73d7b890a0d"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-088"
+    ]
+}

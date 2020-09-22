@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2017-16029",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/henrytseng/hostr.git",
+    "prePatch": {
+        "commit": "5827ba48fd4a08c26604b97798c57d45fe1cd51e",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/routes/statics.js",
+                    "line": 31
+                },
+                "explanation": "Uncontrolled data used in path expression"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "789a00047459fd80b6f0a9701a1378a47fb73ba8"
+    },
+    "CWEs": [
+        "CWE-022",
+        "CWE-023",
+        "CWE-036",
+        "CWE-073",
+        "CWE-099"
+    ]
+}

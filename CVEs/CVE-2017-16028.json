@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2017-16028",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/jonschlinkert/randomatic.git",
+    "prePatch": {
+        "commit": "833f31a5aac0b8c2ddd3ae23ab41a0145c2974d0",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 81
+                },
+                "explanation": "Insecure randomness"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "4a526959b3a246ae8e4a82f9c182180907227fe1"
+    },
+    "CWEs": [
+        "CWE-338"
+    ]
+}

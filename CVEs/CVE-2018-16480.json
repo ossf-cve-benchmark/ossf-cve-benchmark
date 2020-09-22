@@ -1,0 +1,25 @@
+{
+    "CVE": "CVE-2018-16480",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/tnantoka/public.git",
+    "prePatch": {
+        "commit": "6d152eb12b368df70c789aba84d27d01b854ee47",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "bin/public",
+                    "line": 111,
+                    "implicitExtension": "js"
+                },
+                "explanation": "Stored cross-site scripting"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "a754943e2b7348e366d4f2a5319cb12fa873a725"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116"
+    ]
+}

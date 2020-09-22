@@ -1,0 +1,25 @@
+{
+    "CVE": "CVE-2019-10744",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/lodash/lodash.git",
+    "prePatch": {
+        "commit": "1f8ea07746963a535385a5befc19fa687a627d2b",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lodash.js",
+                    "line": 6608
+                },
+                "explanation": "Code injection"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "60eb51791171412bdd7a2bb55415c3821c5240c4"
+    },
+    "CWEs": [
+        "CWE-094",
+        "CWE-079",
+        "CWE-116"
+    ]
+}

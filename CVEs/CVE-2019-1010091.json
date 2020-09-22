@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2019-1010091",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/tinymce/tinymce.git",
+    "prePatch": {
+        "commit": "8b29e00959cf37cbc9642178e686aea688a162ee",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/core/main/ts/api/html/SaxParser.ts",
+                    "line": 60
+                },
+                "explanation": "Incomplete multi-character sanitization"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "aa516c52d4f2104c36af3d640b2adb22e379f9a4"
+    },
+    "CWEs": [
+        "CWE-116",
+        "CWE-020"
+    ]
+}

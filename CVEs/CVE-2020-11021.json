@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2020-11021",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/actions/http-client.git",
+    "prePatch": {
+        "commit": "cde0b32926ae7938c148121d11271f4cb1f5a57f",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.ts",
+                    "line": 482
+                },
+                "explanation": "Authorization headers are sent to untrusted host"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "f6aae3dda4f4c9dc0b49737b36007330f78fd53a"
+    },
+    "CWEs": [
+        "CWE-200"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2016-1000229",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/linxiaowu66/swagger-ui.git",
+    "prePatch": {
+        "commit": "14fad2b4c76efe249db515c98432eb609aa77691",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/main/javascript/helpers/handlebars.js",
+                    "line": 68
+                },
+                "explanation": "Client-side cross-site scripting"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "be1d6d4dbed60e3efbb15caede756bdbd2269a41"
+    },
+    "CWEs": [
+        "CWE-079",
+        "CWE-116"
+    ]
+}

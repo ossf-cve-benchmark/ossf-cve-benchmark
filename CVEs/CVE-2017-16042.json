@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16042",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/tj/node-growl.git",
+    "prePatch": {
+        "commit": "dc8aae046df328edd32dd69f3cd2d6b114d7018e",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/growl.js",
+                    "line": 289
+                },
+                "explanation": "Unsafe shell command constructed from library input"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "d71177d5331c9de4658aca62e0ac921f178b0669"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-088"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2019-10747",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/jonschlinkert/set-value.git",
+    "prePatch": {
+        "commit": "7bd5011d82e583305a191a9a062abfe177ec29ad",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 59
+                },
+                "explanation": "Prototype-polluting function"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "95e9d9923f8a8b4a01da1ea138fcc39ec7b6b15f"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-079",
+        "CWE-094",
+        "CWE-400",
+        "CWE-915"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2019-10745",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/jonschlinkert/assign-deep.git",
+    "prePatch": {
+        "commit": "edab79f1fe37bb8f78f4d7a4fe205c66885acee3",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 22
+                },
+                "explanation": "Prototype pollution in recursive merge function due to missing filtering of property names `__proto__` and `constructor`"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "90bf1c551d05940898168d04066bbf15060f50cc"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-079",
+        "CWE-094",
+        "CWE-400",
+        "CWE-915"
+    ]
+}

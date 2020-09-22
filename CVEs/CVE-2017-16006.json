@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2017-16006",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/jonschlinkert/remarkable.git",
+    "prePatch": {
+        "commit": "a85cf32cd194d7a12d2155256bd38283e431b26b",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/parser_inline.js",
+                    "line": 151
+                },
+                "explanation": "Incomplete URL scheme check"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "6da96c34ca5a3e2ab25ef36a62fe29377bdda9ff"
+    },
+    "CWEs": [
+        "CWE-020"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2017-16026",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/request/request.git",
+    "prePatch": {
+        "commit": "85f8235c061f8d0d1697066290a34f43120cb77f",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/multipart.js",
+                    "line": 71
+                },
+                "explanation": "Resource exhaustion"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "3d31d4526fa4d4e4f59b89cabe194fb671063cdb"
+    },
+    "CWEs": [
+        "CWE-770"
+    ]
+}

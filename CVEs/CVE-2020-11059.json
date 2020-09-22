@@ -1,0 +1,25 @@
+{
+    "CVE": "CVE-2020-11059",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/ipfs/aegir.git",
+    "prePatch": {
+        "commit": "0554d925af93ed9cc9355202769fa6bc2947943e",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/config/webpack.config.js",
+                    "line": 111
+                },
+                "explanation": "Build artifact created by `webpack.DefinePlugin` includes sensitive `process.env` values"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "e36e1def57b2dc1e4b7a5beba964c5924e87f8d8"
+    },
+    "CWEs": [
+        "CWE-312",
+        "CWE-315",
+        "CWE-359"
+    ]
+}

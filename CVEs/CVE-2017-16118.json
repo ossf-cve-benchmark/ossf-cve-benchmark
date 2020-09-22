@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16118",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/jshttp/forwarded.git",
+    "prePatch": {
+        "commit": "ad1efeaf2315c1ccd25c1e5bccb21df626c1d12c",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 14
+                },
+                "explanation": "Polynomial regular expression used on uncontrolled data"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "d469116eda4931fbe1c0ccb29497b35930bfa328"
+    },
+    "CWEs": [
+        "CWE-730",
+        "CWE-400"
+    ]
+}

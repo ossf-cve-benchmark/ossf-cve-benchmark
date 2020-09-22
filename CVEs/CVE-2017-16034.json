@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-16034",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/soyuka/pidusage.git",
+    "prePatch": {
+        "commit": "e3660d8a8e5e61afad9b02af67356a1e239d6bde",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/stats.js",
+                    "line": 103
+                },
+                "explanation": "Unsafe shell command constructed from library input"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "b70eca15f7ca7f1b82a15f8a5d4bb48737f5a89d"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-088"
+    ]
+}

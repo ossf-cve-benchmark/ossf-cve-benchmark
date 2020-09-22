@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2017-16084",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/KoryNunn/list-n-stream.git",
+    "prePatch": {
+        "commit": "87de3f13465e9d4d21eb75be8143cdc4085a19b3",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "server.js",
+                    "line": 88
+                },
+                "explanation": "Uncontrolled data used in path expression"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "99b0b40b34aaedfcdf25da46bef0a06b9c47fb59"
+    },
+    "CWEs": [
+        "CWE-022",
+        "CWE-023",
+        "CWE-036",
+        "CWE-073",
+        "CWE-099"
+    ]
+}

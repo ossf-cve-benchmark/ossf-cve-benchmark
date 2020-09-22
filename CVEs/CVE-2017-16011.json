@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2017-16011",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/jquery/jquery.git",
+    "prePatch": {
+        "commit": "452e32769d514d835988c544492e4083df2bc1d6",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/core.js",
+                    "line": 52
+                },
+                "explanation": "Cross-site scripting"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "05531fc4080ae24070930d15ae0cea7ae056457d"
+    },
+    "CWEs": [
+        "CWE-79"
+    ]
+}

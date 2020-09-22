@@ -1,0 +1,27 @@
+{
+    "CVE": "CVE-2019-10765",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/ioBroker/ioBroker.admin.git",
+    "prePatch": {
+        "commit": "9872f452fce58031e8e623d37b7d396386baa9b7",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "lib/web.js",
+                    "line": 363
+                },
+                "explanation": "Access to log files is vulnerable to path injection due to a missing directory containment check"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "16b2b325ab47896090bc7f54b77b0a97ed74f5cd"
+    },
+    "CWEs": [
+        "CWE-022",
+        "CWE-023",
+        "CWE-036",
+        "CWE-073",
+        "CWE-099"
+    ]
+}

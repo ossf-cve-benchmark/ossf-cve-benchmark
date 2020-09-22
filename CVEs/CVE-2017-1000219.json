@@ -1,0 +1,24 @@
+{
+    "CVE": "CVE-2017-1000219",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/KyleRoss/windows-cpu.git",
+    "prePatch": {
+        "commit": "da656c1a9d5edbf4e8bf0640f349aeb714a4f1a0",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 82
+                },
+                "explanation": "Unsafe shell command constructed from library input"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "b75e19aa2f7459a9506bceb577ba2341fe273117"
+    },
+    "CWEs": [
+        "CWE-078",
+        "CWE-088"
+    ]
+}

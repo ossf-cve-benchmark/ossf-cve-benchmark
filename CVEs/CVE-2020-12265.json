@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2020-12265",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/kevva/decompress.git",
+    "prePatch": {
+        "commit": "74a462a139cc2561b6695e696266c8dc31562d3d",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "index.js",
+                    "line": 50
+                },
+                "explanation": "Arbitrary file write during zip extraction (\"Zip Slip\")"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "967146e70f48be32ed1a69daa3941d681944d513"
+    },
+    "CWEs": [
+        "CWE-022"
+    ]
+}

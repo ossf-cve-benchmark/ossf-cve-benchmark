@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2017-16003",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/felixrieseberg/windows-build-tools.git",
+    "prePatch": {
+        "commit": "3a97ea156d07aaccca101ed8f0a1606eea8dfc2d",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "src/download.js",
+                    "line": 38
+                },
+                "explanation": "Download of sensitive file through insecure connection"
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "9835d33e68f2cb5e4d148e954bb3ed0221d98e90"
+    },
+    "CWEs": [
+        "CWE-829"
+    ]
+}
