@@ -1,5 +1,5 @@
 {
-    "rules": {
-        "no-floating-promises": true
-    }
+  "rules": {
+    "no-floating-promises": true
+  }
 }
