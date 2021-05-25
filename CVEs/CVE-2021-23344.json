@@ -1,0 +1,23 @@
+{
+    "CVE": "CVE-2021-23344",
+    "state": "PUBLISHED",
+    "repository": "https://github.com/totaljs/framework.git",
+    "prePatch": {
+        "commit": "b3f901561d66ab799a4a99279893b94cad7ae4ff",
+        "weaknesses": [
+            {
+                "location": {
+                    "file": "utils.js",
+                    "line": 6625
+                },
+                "explanation": "The package total.js before 3.4.8 are vulnerable to Remote Code Execution (RCE) via set."
+            }
+        ]
+    },
+    "postPatch": {
+        "commit": "c812bbcab8981797d3a1b9993fc42dad3d246f04"
+    },
+    "CWEs": [
+        "CWE-94"
+    ]
+}
